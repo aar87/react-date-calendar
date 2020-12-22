@@ -1,0 +1,11 @@
+.weekDays {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+.day {
+  color: #8E8E93;
+  width: 14%;
+  text-align: right;
+}

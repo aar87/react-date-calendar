@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-date-calendar'
+import { ReactCalendar } from 'react-date-calendar'
 import 'react-date-calendar/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ReactCalendar display={true} lang={'en'} onSelect={value => alert(value)}/>
 }
 
 export default App

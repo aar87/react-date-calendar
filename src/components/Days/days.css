@@ -1,0 +1,30 @@
+.days {
+  padding: 0 25px 0 32px;
+  display: flex;
+  text-align: right;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 20px;
+  margin: 4px 0 4px 10px;
+  padding: 1px 1px;
+  text-align: right;
+  color: #65696D;
+}
+
+.daySelected {
+  width: 20px;
+  margin: 4px 0 4px 10px;
+  padding: 1px 1px;
+  text-align: right;
+  color: #65696D;
+  background-color: rgba(57,150,122, .3);
+  border-radius: 10px;
+}
+
+.day:hover {
+  background-color: rgba(57,150,122, .3);
+  border-radius: 10px;
+  cursor: pointer;
+}

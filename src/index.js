@@ -27,6 +27,7 @@ export const ReactCalendar = ({ lang, display = false, onSelect }) => {
     setMonth(null)
     setYear(null)
     setSelectedDate(selected)
+    // TODO define config for choose return type of date (UTC, timestamp or other)
     onSelect(selected)
     setShow(false)
   }

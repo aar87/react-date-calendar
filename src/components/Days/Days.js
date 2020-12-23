@@ -2,11 +2,18 @@ import React from 'react'
 import style from './days.css'
 
 export const Days = ({onSelect, selected, month, year}) => {
-  const length = 31
+  const length = () => {
+    let date = new Date(selected)
+    const selectedYear = Number(year ? year : date.getFullYear())
+    const selectedMonth = Number(month ? month : date.getMonth())
+
+    return new Date(selectedYear, selectedMonth + 1, 0).getDate()
+  }
   const getDays = () => {
     let i = 1;
+    const count = length()
     let dayList = []
-    while (i < length) {
+    while (i <= count) {
       dayList.push(i)
       i++
     }

@@ -22,14 +22,14 @@ export const ReactCalendar = ({ lang, display = false, onSelect }) => {
       day: value
     }
 
-    const selected = new Date(Number(date.year), Number(date.month), Number(date.day))
+    const selected = new Date(Date.UTC(Number(date.year), Number(date.month), Number(date.day)))
 
     setMonth(null)
     setYear(null)
     setSelectedDate(selected)
     // TODO define config for choose return type of date (UTC, timestamp or other)
-    onSelect(selected)
-    setShow(false)
+    onSelect(selected.getTime())
+    // setShow(false)
   }
 
   if (!show) return ''

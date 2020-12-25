@@ -1,14 +1,14 @@
 .days {
-  padding: 0 25px 0 32px;
+  padding: 0 27px 0 27px;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
 }
 
 .day, .dayShift, .dayDisabled, .daySelected {
-  width: 20px;
-  margin: 4px 0 4px 10px;
-  padding: 1px 1px;
+  width: 33px;
+  padding: 5px 0;
+  margin: 0;
   text-align: center;
   color: #65696D;
 }

@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   padding: 0 28px;
+  margin: 5px 0 10px 0;
 }
 
 .day {
   color: #8E8E93;
   width: 14%;
   text-align: center;
+  margin: 0;
 }

@@ -8,6 +8,8 @@
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
   box-sizing: border-box;
+  position: absolute;
+  z-index: 999;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   /* нечего выделять даты =) */
   -webkit-touch-callout: none; /* iOS Safari */

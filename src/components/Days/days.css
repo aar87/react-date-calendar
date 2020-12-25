@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 }
 
-.day {
+.day, .dayShift, .dayDisabled, .daySelected {
   width: 20px;
   margin: 4px 0 4px 10px;
   padding: 1px 1px;
@@ -14,12 +14,12 @@
 }
 
 .daySelected {
-  width: 20px;
-  margin: 4px 0 4px 10px;
-  padding: 1px 1px;
-  color: #65696D;
   background-color: rgba(57,150,122, .3);
   border-radius: 10px;
+}
+
+.dayDisabled {
+  opacity: .2;
 }
 
 .day:hover {

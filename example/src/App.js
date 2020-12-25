@@ -7,7 +7,9 @@ const App = () => {
   return <div style={{padding: 20}}>
     <ReactCalendar
       display={true}
-      lang={'en'}
+      lang={'ru'}
+      // minDate={1522108400000}
+      // maxDate={1522208400000}
       onSelect={value => console.log('calendar value : ', value)}
     />
   </div>

@@ -9,6 +9,14 @@
   border: 1px solid #DBDBDB;
   box-sizing: border-box;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  /* нечего выделять даты =) */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
 
 .calendarHeader {

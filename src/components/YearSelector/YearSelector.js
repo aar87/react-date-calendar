@@ -10,7 +10,7 @@ export const YearSelector = ({selected, onSelect}) => {
   return <div className={styles.yearBlock}>
     <select defaultValue={year} className={styles.yearSelector} onChange={value => onSelect(value.target.value)}>
       {yearList.map((item, key) =>
-        <option key={key} value={item}>{item}</option> )
+        <option key={key} id={'lol'} value={item}>{item}</option> )
       }
     </select>
     <i className={arrow.arrowUp}/>

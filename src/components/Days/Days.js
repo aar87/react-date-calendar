@@ -3,14 +3,15 @@ import style from './days.css'
 
 export const Days = ({onSelect, selected, month, year}) => {
   const length = () => {
-    let date = new Date(selected)
+    const date = new Date(selected)
     const selectedYear = Number(year ? year : date.getFullYear())
     const selectedMonth = Number(month ? month : date.getMonth())
 
     return new Date(selectedYear, selectedMonth + 1, 0).getDate()
   }
+
   const getDays = () => {
-    let i = 1;
+    let i = 1
     const count = length()
     let dayList = []
     while (i <= count) {
@@ -19,6 +20,21 @@ export const Days = ({onSelect, selected, month, year}) => {
     }
 
     return dayList
+  }
+
+  const shiftedDays = () => {
+    const date = new Date(selected)
+    const selectedYear = Number(year ? year : date.getFullYear())
+    const selectedMonth = Number(month ? month : date.getMonth())
+    const firstDay = new Date(selectedYear, selectedMonth, 0).getDay()
+
+    const list = []
+    let i = 0;
+    for (; i < firstDay; i++) {
+      list.push(i)
+    }
+
+    return list
   }
 
   const isCurrentDay = key => {
@@ -36,6 +52,7 @@ export const Days = ({onSelect, selected, month, year}) => {
   }
 
   return <div className={style.days}>
+    {shiftedDays().map(i => <p className={style.day} key={`shift${i}`}>{}</p>)}
     {getDays().map((item, key) =>
       isCurrentDay(key + 1)
         ? <p key={key} className={style.daySelected} onClick={() => onSelect(item)}>{item}</p>

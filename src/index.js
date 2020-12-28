@@ -62,7 +62,7 @@ export const ReactCalendar = ({
   if (!display) return ''
 
   return (
-    <div className={styles.calendar}>
+    <div className={styles.calendar + ' react-date-calendar'}>
       <div className={styles.calendarHeader}>
         <MonthSelector
           selected={selectedDate}

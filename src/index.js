@@ -82,7 +82,7 @@ export const ReactCalendar = ({
       <div>
         <WeekDays lang={lang} />
       </div>
-      <div>
+      <div className={styles.daysWrapper}>
         <Days
           selected={selectedDate}
           onSelect={(value) => selectDay(value)}

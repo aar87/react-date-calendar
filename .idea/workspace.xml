@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f421a3a2-2ba8-47c5-b130-fc8ed36617be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Days/days.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Days/days.css" afterDir="false" />
+    <list default="true" id="f421a3a2-2ba8-47c5-b130-fc8ed36617be" name="Default Changelist" comment="Width fixed for scale and zooming">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,14 @@
       <updated>1608643880099</updated>
       <workItem from="1608643881344" duration="17306000" />
     </task>
+    <task id="LOCAL-00001" summary="Width fixed for scale and zooming">
+      <created>1609240400011</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609240400011</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -65,5 +72,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Width fixed for scale and zooming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Width fixed for scale and zooming" />
   </component>
 </project>

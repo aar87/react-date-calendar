@@ -1,0 +1,32 @@
+.inputWrapper {
+  /* нечего выделять даты =) */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+  display: flex;
+  align-items: center;
+}
+
+.inputDay, .inputMonth, .inputYear {
+  border: none;
+  outline: none;
+  width: 30px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.inputYear {
+  width: 50px;
+}
+
+.calendarIcon:hover {
+  cursor: pointer;
+  opacity: .7;
+}

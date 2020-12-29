@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f421a3a2-2ba8-47c5-b130-fc8ed36617be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Days/Days.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Days/days.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MonthSelector/MonthSelector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MonthSelector/monthSelector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeekDays/WeekDays.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeekDays/weekDays.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/YearSelector/YearSelector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/YearSelector/yearSelector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/ptsans_regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locale/calendar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Days/days.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Days/days.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +11,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1m0waQenG1HrWNGU25wckKAUsTy" />
@@ -74,5 +64,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

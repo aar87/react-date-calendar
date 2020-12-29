@@ -3,6 +3,7 @@
   display: flex;
   text-align: center;
   flex-wrap: wrap;
+  width: 231px;
 }
 
 .day, .dayShift, .dayDisabled, .daySelected {

@@ -9,39 +9,43 @@ import arrow from './../../styles.module.css'
 const limitMonth = (selected, year, min, max, list = []) => {
   const maxMonth = getMaxMonth(selected, year, max)
   const minMonth = getMinMonth(selected, year, min)
+  const result = {}
 
   if (maxMonth || minMonth) {
-    list = list.filter((item, key) => {
+    Object.entries(list).map((item, key) => {
       if (minMonth && maxMonth) {
-        return minMonth < key && key <= maxMonth
-      } else {
-        if (minMonth) {
-          return minMonth < key
+        if (minMonth < key && key <= maxMonth) {
+          result[key] = item[1]
         }
-        if (maxMonth) {
-          return key <= maxMonth
+      } else {
+        if (minMonth && minMonth < key) {
+          result[key] = item[1]
+        }
+        if (maxMonth && key <= maxMonth) {
+          result[key] = item[1]
         }
       }
     })
   }
 
-  return list
+  return Object.keys(result).length ? result : list
 }
 
-export const MonthSelector = ({ lang, selected, onSelect, min, max, year }) => {
-  const month = new Date(selected).getMonth()
+export const MonthSelector = (props) => {
+  const { lang, selected, month, onSelect, min, max, year } = props
+  const monthCurrent = new Date(selected).getMonth()
   const monthList = limitMonth(selected, year, min, max, getMonthList(lang))
 
   return (
     <div className={styles.monthBlock}>
       <select
-        defaultValue={month}
+        value={month || monthCurrent}
         className={styles.monthSelector}
         onChange={(value) => onSelect(value.target.value)}
       >
-        {monthList.map((item, key) => (
-          <option key={key} value={key}>
-            {item}
+        {Object.entries(monthList).map((item, key) => (
+          <option key={key} value={item[0]}>
+            {item[1]}
           </option>
         ))}
       </select>

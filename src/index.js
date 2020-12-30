@@ -28,16 +28,17 @@ export const ReactCalendar = ({
   const [year, setYear] = useState(null)
 
   const selectYear = (value) => {
-    const currentMonth = month || getMonthFromTimestamp(currentDate)
+    const currentMonth = Number(month || getMonthFromTimestamp(currentDate))
 
     // TODO is max month need to be set ?
     // const maxMonth = getMaxMonth(currentDate, value, maxDate)
     const minMonth = getMinMonth(currentDate, value, minDate)
 
     if (minMonth && minMonth > currentMonth) {
-      setMonth(minMonth + 1)
+      selectMonth(minMonth + 1)
     }
 
+    selectMonth(currentMonth)
     setYear(value)
   }
   const selectMonth = (value) => {
@@ -68,12 +69,14 @@ export const ReactCalendar = ({
           selected={selectedDate}
           onSelect={(value) => selectMonth(value)}
           year={year}
+          month={month}
           min={minDate}
           max={maxDate}
           lang={lang}
         />
         <YearSelector
           selected={selectedDate}
+          month={month}
           onSelect={(value) => selectYear(value)}
           min={minDate}
           max={maxDate}

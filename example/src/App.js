@@ -8,8 +8,9 @@ const App = () => {
     <ReactCalendar
       display={true}
       lang={'ru'}
-      // minDate={1522108400000}
-      // maxDate={1522208400000}
+      // selected={1609361999000}
+      // minDate={1606683600000}
+      // maxDate={1609325315850}
       onSelect={value => console.log('calendar value : ', value)}
     />
   </div>
